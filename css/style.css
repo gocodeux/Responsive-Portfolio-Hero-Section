@@ -106,6 +106,14 @@ header {
     fill: var(--primary-color);
 }
 
+.toggle-btn {
+    display: none;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
 /* header: endd */
 
 
