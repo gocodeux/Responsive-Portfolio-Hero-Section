@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+:root {
+    --heading-typeface: "Bebas Neue", sans-serif;
+    --general-typeface: "Poppins", sans-serif;
+
+    --primary-color: #DC0155;
+}
+
+.desktop-max-width {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+/* Hero Section Animation */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-heading {
+    font-family: var(--heading-typeface);
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 100%;
+    color: #333333;
+    margin-bottom: 1.6rem;
+
+    animation: slideInLeft 1s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.primary-color-text {
+    color: var(--primary-color);
+}
+
+.hero-para {
+    font-family: var(--general-typeface);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 165%;
+    color: #333333;
+    margin-bottom: 3.2rem;
+
+    animation: fadeIn 1.5s ease-out 0.5s;
+    animation-fill-mode: both;
+}
+
+.hero-para-bold {
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.btn {
+    font-family: var(--general-typeface);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 100%;
+    color: #F4F3F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    background: #DC0155;
+    border-radius: 99rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a80140;
+    transform: scale(1.1);
+}
+
+.hero-graphic-box {
+    position: relative;
+    animation: fadeInScale 1.5s ease-out;
+}
+
+.hero-graphic-main {
+    width: 62rem;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+
+    animation: scaleUp 1.2s ease-out 0.3s;
+    animation-fill-mode: both;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.stats {
+    position: absolute;
+    z-index: 2;
+    width: 24rem;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    animation: float 2s infinite ease-in-out, fadeIn 1s ease-out 0.5s forwards;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.stats-1 {
+    width: 20rem;
+    left: -32px;
+    top: 0;
+    animation-delay: 0.2s;
+}
+
+.stats-3 {
+    left: 0;
+    bottom: 0;
+    animation-delay: 0.4s;
+}
+
+.stats-2 {
+    width: 20rem;
+    right: 0;
+    top: 0;
+    transform: translate(40%, 132%);
+    animation-delay: 0.6s;
+}
+
+/* Services Section Animation */
+.section-heading-box {
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.section-heading {
+    font-family: var(--heading-typeface);
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 125%;
+    color: #333333;
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+font-family: "Bebas Neue", sans-serif;
+font-family: "Poppins", sans-serif;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  } */
+
+/* presets */
+:root {
+    /* typefaces */
+    --heading-typeface: "Bebas Neue", sans-serif;
+    --general-typeface: "Poppins", sans-serif;
+
+    /* colors */
+    --primary-color: #DC0155;
+}
+
+
+.desktop-max-width {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+
+/* hero section: start */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+.hero-heading {
+    font-family: var(--heading-typeface);
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 100%;
+    color: #333333;
+
+    margin-bottom: 1.6rem;
+}
+
+.primary-color-text {
+    color: var(--primary-color);
+}
+
+.hero-para {
+    font-family: var(--general-typeface);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 165%;
+    color: #333333;
+
+    margin-bottom: 3.2rem;
+}
+
+.hero-para-bold {
+    font-weight: 500;
+
+    margin-bottom: .8rem;
+}
+
+.btn {
+    font-family: var(--general-typeface);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 100%;
+    color: #F4F3F8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    background: #DC0155;
+    border-radius: 99rem;
+
+    outline: none;
+    border: none;
+}
+
+.hero-graphic-box {
+    position: relative;
+}
+
+.hero-graphic-main {
+    width: 62rem;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.stats {
+    position: absolute;
+    z-index: 2;
+
+    width: 24rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.stats-1 {
+    width: 20rem;
+    left: -32px;
+    top: 0;
+}
+
+.stats-3 {
+    left: 0;
+    bottom: 0;
+}
+
+.stats-2 {
+    width: 20rem;
+    right: 0;
+    top: 0;
+    transform: translate(40%, 132%);
+}
+
+/* hero section: end */
+
+
+
+/* services section: start */
+.section-heading {
+    font-family: var(--heading-typeface);
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 125%;
+    color: #333333;
+}
+
+/* services section: end */
