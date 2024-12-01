@@ -10,6 +10,10 @@ font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 html,
 body {
     font-size: 62.5%;
@@ -38,6 +42,71 @@ body {
     max-width: 130rem;
     margin: 0 auto;
 }
+
+
+/* header: start */
+header {
+    margin-bottom: 3.2rem;
+}
+
+.navbar {
+    padding: 3.2rem 0rem;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: var(--general-typeface);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 100%;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.nav-links a {
+    font-family: var(--general-typeface);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 100%;
+    color: #333333;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color)
+}
+
+.social-media-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.social-media-box svg path {
+    transition: fill .3s ease;
+    cursor: pointer;
+}
+
+.social-media-box svg:hover path {
+    fill: var(--primary-color);
+}
+
+/* header: endd */
 
 
 /* hero section: start */
@@ -139,12 +208,55 @@ body {
 
 
 /* services section: start */
+.service {
+    margin-bottom: 4.8rem;
+}
+
+.section-heading-box {
+    margin-bottom: 4.8rem;
+}
+
+.service-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.2rem;
+}
+
+.service-item {
+    max-width: 32rem;
+}
+
 .section-heading {
     font-family: var(--heading-typeface);
     font-weight: 400;
     font-size: 4.8rem;
     line-height: 125%;
     color: #333333;
+    text-align: left;
+}
+
+.service-item svg {
+    margin-bottom: 2rem;
+}
+
+.service-item-heading {
+    font-family: var(--general-typeface);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 125%;
+    color: #333333;
+    margin-bottom: .4rem;
+}
+
+.service-item-para {
+    font-family: var(--general-typeface);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: #909090;
 }
 
 /* services section: end */
